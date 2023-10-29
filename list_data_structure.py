@@ -50,3 +50,15 @@ numbers.pop(0)
 
 # list can contain value of different data types
 random_list = ["Abyaz", 32, 18.0, True, None]
+
+# delete item from list
+del numbers[0]
+
+# we can access multiple items together
+numbers[0:3]
+
+# we can also leave the first value if we want to start from the begining
+numbers[:3]
+
+# negative indexing is also available
+numbers[-1]
