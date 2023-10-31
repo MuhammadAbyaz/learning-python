@@ -16,8 +16,8 @@ if 3 > 5:
     print("Hello")
 
 # it also works on truthy value
-a = []
-if a:
+abyaz = []
+if abyaz:
     print("Hello")
 
 if 3 > 5:
