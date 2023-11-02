@@ -36,4 +36,5 @@ print(list_of_numbers[30:70])
 print(list_of_numbers[::-1])
 
 # it will return list sorted in reverse in place
-print(list_of_numbers.reverse())
+list_of_numbers.reverse()
+print(list_of_numbers)

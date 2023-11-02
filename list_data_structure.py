@@ -62,3 +62,7 @@ numbers[:3]
 
 # negative indexing is also available
 numbers[-1]
+
+
+# any() checks in the list if there is any true value
+# all() checks all the value True or not
