@@ -19,6 +19,9 @@ def repos_with_most_stars(languages, sort="stars", order="desc"):
     if response.status_code != 200:
         raise RuntimeError(
             "An error occurred and status code was", response.status_code)
+    if response.status_code == 403:
+        raise RuntimeError(
+            "An error occurred. HTTP status code was", response.status_code)
     else:
         response_json = response.json()["items"]
         return response_json

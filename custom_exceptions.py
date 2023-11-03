@@ -8,3 +8,18 @@ try:
     # we can also use multiple except clause but we have to catch sepecific exception first otherwise we will swallowed the specific exception
 except ValueError:
     print("Thats not a number!")
+
+# custom exception
+
+
+class MyCustonException(Exception):
+    pass
+
+
+class IncorrectValueException(Exception):
+    def __init__(self, value):
+        message = f"Got a bad value: {value}"
+        super().__init__(message)
+
+
+raise MyCustonException()
